@@ -1,0 +1,493 @@
+*{
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'KBO-Dia-Gothic_bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  margin: 0px auto;
+  background-color: #d6e0f0;
+}
+
+/*로고*/
+header {
+  background-color: #3D3B40;
+  color: #525CEB;
+  width: 100%;
+  height: 100px;  
+  display: flex;
+  justify-content: space-between;
+}
+
+header>.logo{
+  width: 350px;
+  height: 100%;
+  margin: 20px;
+  font-size: 40px;
+  font-family: 'KBO-Dia-Gothic_bold';
+}
+
+header>.logo>p>a{
+  color: #525CEB;
+}
+
+header>.logo>p>a:active{
+  color: #777fee;
+}
+
+/*메뉴영역*/
+header>nav{
+  width: 500px;
+  height: 50%;
+  align-self: center;
+  margin-right: 30px;
+  z-index: 1;
+
+}
+
+header>nav>.menu{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+header>nav>.menu>.mainmenu{
+  width: 35%;
+}
+
+header>nav>.menu>.mainmenu>a{
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  font-weight: 900;
+  color: white;
+  font-family: 'SUITE-Regular';
+}
+
+header>nav>.menu>.mainmenu>a:hover{
+  color: #525CEB;
+}
+
+header>nav>.menu>.mainmenu>a:active{
+  color: #525ceb7c;
+}
+
+header>nav>.menu>.mainmenu>.subMenu{
+  display: none;
+}
+
+header>nav>.menu>.mainmenu>.subMenu>li>a{
+  background-color: #525cebc9;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
+  font-family: 'SUITE-Regular';
+}
+
+header>nav>.menu>.mainmenu>.subMenu>li>a:hover{
+  background-color: #3440e7ce;
+}
+
+header>nav>.menu>.mainmenu>.subMenu>li>a:active{
+  background-color: #3440e7;
+}
+
+/*이미지 슬라이드*/
+.img{
+  width: 1902px;
+  height: 960px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img>.img_slid{
+  display: flex;
+  transition: all 0.5s;
+
+}
+
+.img>.img_slid>.child>img{
+  width: 1902px;
+}
+
+/*설명*/
+.DP{
+  width: 100%;
+  height: 700px;
+  padding: 10PX;
+}
+
+.DP>.dp{
+  width: 80%;
+  height: 45%;
+  margin: 0px auto;
+  display: flex;
+}
+
+.DP>.dp>.Description{
+  margin: 10px;
+  padding: 5px;
+  width: 33.3%;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #767479;
+  display: flex;
+}
+
+.DP>.dp>.Description:hover{
+  box-shadow: 0px 0px 10px #353336;
+}
+
+.DP>.dp>.Description>.D_img{
+  background-color: #7e9bc7;
+  border-radius: 5px;
+  margin: 20px;
+  width: 50%;
+}
+
+.DP>.dp>.Description>.D_memo{
+  width: 50%;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.DP>.dp>.Description>.D_memo>.D{
+  width: 100%;
+  font-family: 'SUITE-Regular';
+  font-weight: bold; 
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.DP>.dp>.Description>.D_memo>.DD{
+  width: 100%;
+  font-family: 'SUITE-Regular';
+  font-weight: bold; 
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.DP>.dp>.Description>.D_memo>.D_1{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 ;
+}
+
+.DP>.dp>.Description>.D_memo>.D_1>.d_1{
+  font-family: 'SUITE-Regular';
+  font-weight: bold; 
+  font-size: 15px;
+  color: #767479;
+}
+
+.DP>.dp>.Description>.D_memo>.D_2{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 ;
+  margin-bottom: 15px;
+}
+
+.DP>.dp>.Description>.D_memo>.D_2>.d_2{
+  font-family: 'SUITE-Regular';
+  font-weight: bold; 
+  font-size: 15px;
+  color: #525CEB;
+}
+
+.DP>.dp>.Description>.D_memo>.D_3{
+  text-align: center;
+}
+
+.DP>.dp>.Description>.D_memo>.D_3>.d{
+  width: 100%;
+  font-family: 'SUITE-Regular';
+  font-weight: bold; 
+  font-size: 20px;
+  color: #3440e7;
+  margin: 5px 0;
+}
+
+
+
+/*오프라인*/
+.OFF{
+  width: 100%;
+  height: 350px;
+}
+
+.OFF>.off{
+  width: 80%;
+  margin: 0px auto;
+}
+
+/*오프라인 - 제목*/
+.OFF>.off>#Off_line_h{
+  margin: 20px 20px;
+  font-size: 40px;
+  font-family: 'SUITE-Regular';
+  font-weight: 900;
+  text-align: center;
+}
+
+.OFF>.off>#Off_line_h>a{
+  color: #525CEB;
+  text-shadow: 2px 2px 5px#96939b;
+}
+
+.OFF>.off>#Off_line{
+  display: flex;
+  justify-content: space-around;
+  font-family: 'SUITE-Regular';
+}
+
+/*오프라인 - 박스*/
+.OFF>.off>#Off_line>.off_line_box{
+  width: 33%;
+  height: 250px;
+  margin: 10px 20px;
+  background-color: #525CEB;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #767479;
+  position: relative;
+}
+
+.OFF>.off>#Off_line>.off_line_box:hover{
+  box-shadow: 0px 0px 10px #353336;
+}
+
+/*오프라인 - 부제목*/
+.OFF>.off>#Off_line>.off_line_box>.p{
+  color: #fff;
+   font-size: 18px;
+}
+
+/*오프라인 - 제목*/
+.OFF>.off>#Off_line>.off_line_box>.P{
+   font-size: 30px;
+   font-weight: bold;
+   color: #fff;
+   margin: 5px 0px;
+}
+
+/*오프라인 - 아이콘*/
+.OFF>.off>#Off_line>.off_line_box>.I{
+  margin: 10px;
+  width: 85%;
+ display: flex;
+ justify-content: space-between;
+ position: absolute;
+ bottom: 0;
+}
+
+.OFF>.off>#Off_line>.off_line_box>.I>.img_b{
+  align-self: flex-end;
+  
+}
+
+/*문의글*/
+.Inquiry{
+  width: 100%;
+  padding: 10px;
+}
+
+/*문의글 - 제목란*/
+.Inquiry>.Inquiry_h{
+  width: 70%;
+  display: flex;
+  justify-content:space-between; 
+  margin: 10px auto;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: 'SUITE-Regular';
+}
+
+.Inquiry>.Inquiry_h>h3{
+  font-weight: bold;
+}
+
+.Inquiry>.Inquiry_h>h3>a{
+  color: #525CEB;
+  text-shadow: 2px 2px 5px#96939b;
+}
+
+.Inquiry>.Inquiry_h>button{
+  font-family: 'SUITE-Regular';
+  width: 50px;
+  height: 35px;
+  background-color: #525CEB;
+  color: #e9eaeb;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px #3D3B40;
+  margin-top: 3px;
+}
+
+.Inquiry>.Inquiry_h>button:hover{
+  background-color: #e9eaeb;
+  color: #3D3B40;
+}
+
+/*문의글 - 이름, 이메일란*/
+.Inquiry{
+  width: 100%;
+}
+
+.Inquiry>.Inquiry_box{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'SUITE-Regular';
+  margin: 10px auto;
+}
+
+.Inquiry>.Inquiry_box>label{
+  margin: 5px 0px;
+  font-family: 'SUITE-Regular';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Inquiry>.Inquiry_box>.memo{
+  width: 40%;
+  height: 40px;
+  padding: 8px;
+  font-family: 'SUITE-Regular';
+  border-radius: 5px;
+  font-size: 16px;
+  color: #3D3B40;
+}
+
+/*문의글 - 문의사항란*/
+.Inquiry>.Inquiry_box_1{
+  width: 70%;;
+  font-family: 'SUITE-Regular';
+  margin: 10px auto;
+}
+
+.Inquiry>.Inquiry_box_1>p{
+  margin: 10px 0px;
+  font-family: 'SUITE-Regular';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Inquiry>.Inquiry_box_1>#memo_box{
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-family: 'SUITE-Regular';
+  border-radius: 5px;
+  font-size: 16px;
+  color: #3D3B40;
+}
+
+/*문의글 - 목록란*/
+.Inquiry>p{
+  font-family: 'SUITE-Regular';
+  width: 70%;
+  margin: 5px auto;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.list{
+  width: 100%;
+}
+
+
+.list>#memo-list{
+  width: 70%;
+  margin: 0px auto;
+  font-family: 'SUITE-Regular';
+  color: #3D3B40;
+}
+
+
+
+
+/*하단메뉴 - 로고*/
+footer{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  background-color: #3D3B40;
+}
+
+footer>#footer_img>#footer_logo{
+  width: 350px;
+  height: 100px;
+  font-size: 40px;
+  font-family: 'KBO-Dia-Gothic_bold';
+  color: #525CEB;
+}
+
+footer>#footer_img>#footer_logo>p{
+  text-align: center;
+  line-height: 100px;
+}
+
+footer>#footer_img>#footer_logo>p>a{
+  color: #525CEB;
+}
+
+footer>#footer_img>#footer_logo>p>a:active{
+  color: #777fee;
+}
+
+/*하단메뉴 - 아이콘*/
+footer>#footer_img>.icon{
+  margin: 0px 43px;
+}
+
+footer>#footer_img>.icon > a > img{
+  margin: 5px;
+}
+
+footer>#footer_img>.icon > a > img:hover{
+ background-color: #525CEB;
+ border-radius: 5px;
+}
+
+/*하단메뉴 - 기업상세정보*/
+#footer_name{
+  font-family: 'SUITE-Regular';
+  margin: 30px 30px;
+  color: #545bca;
+}
+
+#footer_name>p{
+  margin: 5px;
+}
+
+#footer_name>p>span{
+  font-family: 'SUITE-Regular';
+  font-weight: 900;
+}
+
+
